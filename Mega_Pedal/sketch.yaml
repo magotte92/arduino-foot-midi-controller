@@ -1,0 +1,11 @@
+profiles:
+  mega2560:
+    notes: >
+      Arduino Mega 2560 foot controller. Serial MIDI on the default UART
+      (the 16U2 USB bridge). Bounce2 debounces the footswitches.
+    fqbn: arduino:avr:mega
+    platforms:
+      - platform: arduino:avr (1.8.8)
+    libraries:
+      - Bounce2 (2.71.0)
+      - MIDI Library (5.0.2)
