@@ -1,0 +1,16 @@
+name: Build
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: arduino/setup-arduino-cli@v2
+        with:
+          version: 1.5.1
+      - name: Compile Mega 2560 sketch
+        run: ./scripts/smoke.sh
