@@ -2,6 +2,8 @@
 
 A foot MIDI controller pedal for the Arduino Mega 2560. Ten footswitches send MIDI control changes on channel 1, and each switch toggles a matching LED. Debouncing uses Bounce2. MIDI goes out the Mega's hardware UART (pins 0/1), which the on-board 16U2 bridges to USB.
 
+The improvement plan for this firmware is in [PLAN.md](PLAN.md).
+
 ## Build
 
 Requires [Arduino CLI](https://arduino.github.io/arduino-cli/) 1.5.x (or Arduino IDE 2, which reads the same sketch profile).
